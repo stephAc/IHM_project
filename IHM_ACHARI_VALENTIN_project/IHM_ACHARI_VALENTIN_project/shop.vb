@@ -1,5 +1,8 @@
 ﻿Public Class shop
+    '------VariablesGlobales------
+    Public connecte As Boolean = False
 
+    '------Variables------
     Enum Categorie
         Aucun
         Récents
@@ -7,12 +10,16 @@
         Type
     End Enum
 
+    'En préparation
+    Class Jeux
+        Public _nomJeux As String
+        Public _jacket As Image
+    End Class
+
     Private Sub shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
 
-
-        '------Variable------
-
+        'Remplissage de la combo box
         Dim cats As Array
         cats = System.Enum.GetValues(GetType(Categorie))
         For Each cat In cats

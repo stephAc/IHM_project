@@ -33,10 +33,10 @@ Partial Class shop
         Me.ListBoxDescription = New System.Windows.Forms.ListBox()
         Me.pnlGame = New System.Windows.Forms.FlowLayoutPanel()
         Me.panRecherhe = New System.Windows.Forms.Panel()
-        Me.txtRecherche = New System.Windows.Forms.TextBox()
-        Me.lblTrier = New System.Windows.Forms.Label()
-        Me.cboBoxTrier = New System.Windows.Forms.ComboBox()
         Me.btnRecherche = New System.Windows.Forms.Button()
+        Me.cboBoxTrier = New System.Windows.Forms.ComboBox()
+        Me.lblTrier = New System.Windows.Forms.Label()
+        Me.txtRecherche = New System.Windows.Forms.TextBox()
         Me.pnlNav.SuspendLayout()
         Me.TabLayGameDescription.SuspendLayout()
         Me.panRecherhe.SuspendLayout()
@@ -81,33 +81,39 @@ Partial Class shop
         '
         'btnAccount
         '
+        Me.btnAccount.BackColor = System.Drawing.Color.DarkRed
         Me.btnAccount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAccount.Location = New System.Drawing.Point(419, 3)
         Me.btnAccount.Name = "btnAccount"
         Me.btnAccount.Size = New System.Drawing.Size(202, 34)
         Me.btnAccount.TabIndex = 2
         Me.btnAccount.Text = "Compte"
-        Me.btnAccount.UseVisualStyleBackColor = True
+        Me.btnAccount.UseVisualStyleBackColor = False
         '
         'btnInscription
         '
+        Me.btnInscription.BackColor = System.Drawing.Color.DarkRed
         Me.btnInscription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnInscription.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnInscription.Location = New System.Drawing.Point(627, 3)
         Me.btnInscription.Name = "btnInscription"
         Me.btnInscription.Size = New System.Drawing.Size(202, 34)
         Me.btnInscription.TabIndex = 3
         Me.btnInscription.Text = "Inscription/Connexion"
-        Me.btnInscription.UseVisualStyleBackColor = True
+        Me.btnInscription.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.DarkRed
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnExit.Location = New System.Drawing.Point(835, 3)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(202, 34)
         Me.btnExit.TabIndex = 4
         Me.btnExit.Text = "Quitter"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'TabLayGameDescription
         '
@@ -166,12 +172,23 @@ Partial Class shop
         Me.panRecherhe.Size = New System.Drawing.Size(764, 133)
         Me.panRecherhe.TabIndex = 11
         '
-        'txtRecherche
+        'btnRecherche
         '
-        Me.txtRecherche.Location = New System.Drawing.Point(13, 15)
-        Me.txtRecherche.Name = "txtRecherche"
-        Me.txtRecherche.Size = New System.Drawing.Size(400, 20)
-        Me.txtRecherche.TabIndex = 0
+        Me.btnRecherche.Location = New System.Drawing.Point(657, 14)
+        Me.btnRecherche.Name = "btnRecherche"
+        Me.btnRecherche.Size = New System.Drawing.Size(97, 23)
+        Me.btnRecherche.TabIndex = 3
+        Me.btnRecherche.Text = "Recherche"
+        Me.btnRecherche.UseVisualStyleBackColor = True
+        '
+        'cboBoxTrier
+        '
+        Me.cboBoxTrier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboBoxTrier.FormattingEnabled = True
+        Me.cboBoxTrier.Location = New System.Drawing.Point(514, 14)
+        Me.cboBoxTrier.Name = "cboBoxTrier"
+        Me.cboBoxTrier.Size = New System.Drawing.Size(121, 21)
+        Me.cboBoxTrier.TabIndex = 2
         '
         'lblTrier
         '
@@ -184,23 +201,12 @@ Partial Class shop
         Me.lblTrier.TabIndex = 1
         Me.lblTrier.Text = "Trier par :"
         '
-        'cboBoxTrier
+        'txtRecherche
         '
-        Me.cboBoxTrier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboBoxTrier.FormattingEnabled = True
-        Me.cboBoxTrier.Location = New System.Drawing.Point(514, 14)
-        Me.cboBoxTrier.Name = "cboBoxTrier"
-        Me.cboBoxTrier.Size = New System.Drawing.Size(121, 21)
-        Me.cboBoxTrier.TabIndex = 2
-        '
-        'btnRecherche
-        '
-        Me.btnRecherche.Location = New System.Drawing.Point(657, 14)
-        Me.btnRecherche.Name = "btnRecherche"
-        Me.btnRecherche.Size = New System.Drawing.Size(97, 23)
-        Me.btnRecherche.TabIndex = 3
-        Me.btnRecherche.Text = "Recherche"
-        Me.btnRecherche.UseVisualStyleBackColor = True
+        Me.txtRecherche.Location = New System.Drawing.Point(13, 15)
+        Me.txtRecherche.Name = "txtRecherche"
+        Me.txtRecherche.Size = New System.Drawing.Size(400, 20)
+        Me.txtRecherche.TabIndex = 0
         '
         'shop
         '

@@ -28,6 +28,7 @@ Partial Class Library
         Me.btnAccount = New System.Windows.Forms.Button()
         Me.btnInscription = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.pnlNonConnecter = New System.Windows.Forms.Panel()
         Me.pnlNav.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,11 +94,19 @@ Partial Class Library
         Me.btnExit.Text = "Quitter"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'pnlNonConnecter
+        '
+        Me.pnlNonConnecter.Location = New System.Drawing.Point(236, 193)
+        Me.pnlNonConnecter.Name = "pnlNonConnecter"
+        Me.pnlNonConnecter.Size = New System.Drawing.Size(618, 277)
+        Me.pnlNonConnecter.TabIndex = 2
+        '
         'Library
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1084, 761)
+        Me.Controls.Add(Me.pnlNonConnecter)
         Me.Controls.Add(Me.pnlNav)
         Me.Name = "Library"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -113,4 +122,5 @@ Partial Class Library
     Friend WithEvents btnAccount As Button
     Friend WithEvents btnInscription As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents pnlNonConnecter As Panel
 End Class
