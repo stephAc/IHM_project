@@ -1,19 +1,23 @@
 ﻿Public Class Library
 
+    'test pour enlever le teste connexion
+    Private Sub Library_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        pnlNonConnecter.Controls.Clear() 'Pour virer le panel si jamais il a été créé mais ne fonctionne pas
+        connexion()
+        Console.WriteLine("chargé")
+    End Sub
 
 
     Private Sub Library_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-        pnlNonConnecter.Controls.Clear()
         connexion()
-
+        Console.WriteLine("chargé")
     End Sub
 
     '------TestConnexion------
-
-    'Il faut dans un else virer le panel si jamais il a été créé
     Private Sub connexion()
-        If Not shop.getConnecte() Then
+        If Not shop.connecte Then
 
             Dim pnlMessage As New FlowLayoutPanel
             pnlMessage.Width = 500

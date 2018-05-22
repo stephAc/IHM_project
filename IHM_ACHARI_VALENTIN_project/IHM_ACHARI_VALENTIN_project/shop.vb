@@ -1,6 +1,10 @@
 ﻿Public Class shop
+
+    'My.Reessource.nomImg  chemin pour image
+
+
     '------VariablesGlobales------
-    Private connecte As Boolean = False
+    Public connecte As Boolean = False
 
     '------Variables------
     Enum Categorie
@@ -12,11 +16,26 @@
 
     'En préparation
     Class Jeux
-        Public _nomJeux As String
+        Public _nomJeux As New Label
         Public _jacket As Image
         Public _type As String
         Public _note As Integer
+        Public _panJeu As Panel
+
+
+        '------ConstructeurJeux------
+        Sub New(nomJ As String, img As Image)
+        End Sub
     End Class
+
+
+
+
+
+    '------CréationPanelJeu------
+    'creer le panel l'ajouter a la classe jeu puis 
+    'panelGlobal?control.add(jeu._panJeu)  exemple d'ajout 
+
 
     Private Sub shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -52,14 +71,10 @@
     End Sub
 
     '------Get------
-    Public Function getConnecte()
-        Return connecte
-    End Function
+
 
     '------Set------
-    Public Sub setConnecte(bool As Boolean)
-        connecte = bool
-    End Sub
+
 
 
 End Class
