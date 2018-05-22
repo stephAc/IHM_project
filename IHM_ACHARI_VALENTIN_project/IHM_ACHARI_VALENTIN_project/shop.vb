@@ -1,6 +1,6 @@
 ﻿Public Class shop
     '------VariablesGlobales------
-    Public connecte As Boolean = False
+    Private connecte As Boolean = False
 
     '------Variables------
     Enum Categorie
@@ -14,6 +14,8 @@
     Class Jeux
         Public _nomJeux As String
         Public _jacket As Image
+        Public _type As String
+        Public _note As Integer
     End Class
 
     Private Sub shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -48,5 +50,16 @@
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
     End Sub
+
+    '------Get------
+    Public Function getConnecte()
+        Return connecte
+    End Function
+
+    '------Set------
+    Public Sub setConnecte(bool As Boolean)
+        connecte = bool
+    End Sub
+
 
 End Class

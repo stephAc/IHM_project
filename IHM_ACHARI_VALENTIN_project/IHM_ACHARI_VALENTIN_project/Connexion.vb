@@ -9,7 +9,7 @@
     End Sub
 
     Private Sub btnConnexion_Click(sender As Object, e As EventArgs) Handles btnConnexion.Click
-        shop.connecte = True
+        shop.setConnecte(True) 'fonction dans shop.vb
         Library.Show()
         Me.Hide()
     End Sub

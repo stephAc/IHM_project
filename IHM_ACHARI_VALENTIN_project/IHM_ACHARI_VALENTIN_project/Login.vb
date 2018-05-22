@@ -14,4 +14,10 @@
         Connexion.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnEnvoyer_Click(sender As Object, e As EventArgs) Handles btnEnvoyer.Click
+        shop.setConnecte(True) 'fonction dans shop.vb
+        Library.Show()
+        Me.Hide()
+    End Sub
 End Class

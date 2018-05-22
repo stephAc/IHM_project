@@ -30,3 +30,19 @@ D:\CitizenS\Documents\Orsay\Cours_Exo\IHM\IHM_project\IHM_project\IHM_ACHARI_VAL
 D:\CitizenS\Documents\Orsay\Cours_Exo\IHM\IHM_project\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.exe
 D:\CitizenS\Documents\Orsay\Cours_Exo\IHM\IHM_project\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.xml
 D:\CitizenS\Documents\Orsay\Cours_Exo\IHM\IHM_project\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.pdb
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\bin\Debug\IHM_ACHARI_VALENTIN_project.exe.config
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\bin\Debug\IHM_ACHARI_VALENTIN_project.exe
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\bin\Debug\IHM_ACHARI_VALENTIN_project.pdb
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\bin\Debug\IHM_ACHARI_VALENTIN_project.xml
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.vbprojResolveAssemblyReference.cache
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.Account.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.Connexion.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.Library.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.Login.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.Resources.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.shop.resources
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.vbproj.GenerateResource.Cache
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.vbproj.CoreCompileInputs.cache
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.exe
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.xml
+C:\Users\Citizen S\Desktop\Orsay\Exo_Cours\IHM\IHM_project\IHM_ACHARI_VALENTIN_project\IHM_ACHARI_VALENTIN_project\obj\Debug\IHM_ACHARI_VALENTIN_project.pdb

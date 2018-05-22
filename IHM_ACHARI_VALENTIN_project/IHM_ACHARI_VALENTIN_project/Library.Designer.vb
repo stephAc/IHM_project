@@ -42,7 +42,7 @@ Partial Class Library
         Me.pnlNav.Location = New System.Drawing.Point(25, 12)
         Me.pnlNav.Name = "pnlNav"
         Me.pnlNav.Size = New System.Drawing.Size(1040, 40)
-        Me.pnlNav.TabIndex = 1
+        Me.pnlNav.TabIndex = 0
         '
         'btnShop
         '

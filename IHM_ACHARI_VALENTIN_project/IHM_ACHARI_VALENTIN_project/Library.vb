@@ -4,6 +4,7 @@
 
     Private Sub Library_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        pnlNonConnecter.Controls.Clear()
         connexion()
 
     End Sub
@@ -12,7 +13,7 @@
 
     'Il faut dans un else virer le panel si jamais il a été créé
     Private Sub connexion()
-        If Not shop.connecte Then
+        If Not shop.getConnecte() Then
 
             Dim pnlMessage As New FlowLayoutPanel
             pnlMessage.Width = 500
