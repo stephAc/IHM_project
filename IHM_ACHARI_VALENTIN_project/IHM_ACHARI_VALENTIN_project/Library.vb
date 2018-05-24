@@ -2,17 +2,16 @@
 
     'test pour enlever le teste connexion
     Private Sub Library_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
-        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-        pnlNonConnecter.Controls.Clear() 'Pour virer le panel si jamais il a été créé mais ne fonctionne pas
         connexion()
-        Console.WriteLine("chargé")
+        Console.WriteLine("la")
+        Console.WriteLine(shop.connecte)
     End Sub
 
 
     Private Sub Library_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
         connexion()
-        Console.WriteLine("chargé")
+        Console.WriteLine("ici")
     End Sub
 
     '------TestConnexion------
@@ -39,9 +38,18 @@
             pnlMessage.Controls.Add(lblMessage)
             pnlMessage.Controls.Add(btnConnexion)
             pnlNonConnecter.Controls.Add(pnlMessage)
+        Else
+            pnlNonConnecter.Controls.Clear() 'Pour virer le panel si jamais il a été créé mais ne fonctionne pas
         End If
 
     End Sub
+
+
+    Public Sub reLoad()
+        ' Library_Load()
+    End Sub
+
+
 
     '------NAVIGATION------
 

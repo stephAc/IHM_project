@@ -17,6 +17,8 @@
 
     Private Sub btnEnvoyer_Click(sender As Object, e As EventArgs) Handles btnEnvoyer.Click
         shop.connecte = True 'variable dans shop.vb
+
+        Console.WriteLine(shop.connecte)
         Library.Show()
         Me.Hide()
     End Sub

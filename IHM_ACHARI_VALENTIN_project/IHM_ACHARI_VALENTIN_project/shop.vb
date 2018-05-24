@@ -1,10 +1,9 @@
 ﻿Public Class shop
 
-    'My.Reessource.nomImg  chemin pour image
-
-
     '------VariablesGlobales------
     Public connecte As Boolean = False
+
+    Dim magasin As shop
 
     '------Variables------
     Enum Categorie
@@ -14,23 +13,11 @@
         Type
     End Enum
 
-    'En préparation
-    Class Jeux
-        Public _nomJeux As New Label
-        Public _jacket As Image
-        Public _type As String
-        Public _note As Integer
-        Public _panJeu As Panel
+    Public pac As New Jeux("PacMan", My.Resources.rien, "Aventure", 5)
+    Public pong As New Jeux("Pong", My.Resources.rien, "adv", 3)
+    Public tetris As New Jeux("Tétris", My.Resources.rien, "adv", 8)
 
-
-        '------ConstructeurJeux------
-        Sub New(nomJ As String, img As Image)
-        End Sub
-    End Class
-
-
-
-
+    Dim tabJeu() As Jeux = {pac, pong, tetris}
 
     '------CréationPanelJeu------
     'creer le panel l'ajouter a la classe jeu puis 
@@ -39,6 +26,9 @@
 
     Private Sub shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+
+        'Remplissage panel Game
+        creationTabGameShop()
 
         'Remplissage de la combo box
         Dim cats As Array
@@ -70,11 +60,28 @@
         Application.Exit()
     End Sub
 
-    '------Get------
+    '------Méthodes------
 
+    Private Sub creationTabGameShop()
 
-    '------Set------
+        For Each i In tabJeu
+        
+            Dim img As New PictureBox
+            img.Width = 150
+            img.Width = 180
+            img.Image = i._jacket
 
+            Dim pnlGame As New Panel
+            pnlGame.Width = 150
+            pnlGame.Height = 180
+            pnlGame.AutoSize = False
 
+            pnlGame.Controls.Add(img)
+
+            i._panJeu = pnlGame
+
+            pnlGame.Controls.Add(pnlGame)
+        Next
+    End Sub
 
 End Class

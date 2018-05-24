@@ -27,6 +27,11 @@ IHM_ACHARI_VALENTIN_project
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:IHM_ACHARI_VALENTIN_project.My.Resources.Resources.rien">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:IHM_ACHARI_VALENTIN_project.My.Resources.Resources.sw">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
