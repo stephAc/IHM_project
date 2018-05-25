@@ -39,7 +39,10 @@
             pnlMessage.Controls.Add(btnConnexion)
             pnlNonConnecter.Controls.Add(pnlMessage)
         Else
-            pnlNonConnecter.Controls.Clear() 'Pour virer le panel si jamais il a été créé mais ne fonctionne pas
+            pnlNonConnecter.Controls.Clear()
+            pnlNonConnecter.Refresh()
+
+            'Pour virer le panel si jamais il a été créé mais ne fonctionne pas
         End If
 
     End Sub

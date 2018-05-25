@@ -1,7 +1,7 @@
 ﻿Public Class shop
 
     '------VariablesGlobales------
-    Public connecte As Boolean = False
+    Public Shared connecte As Boolean = False
 
     Dim magasin As shop
 
@@ -16,12 +16,11 @@
     Public pac As New Jeux("PacMan", My.Resources.rien, "Aventure", 5)
     Public pong As New Jeux("Pong", My.Resources.rien, "adv", 3)
     Public tetris As New Jeux("Tétris", My.Resources.rien, "adv", 8)
+    Public r1 As New Jeux("PacMan", My.Resources.rien, "Aventure", 5)
+    Public r2 As New Jeux("Pong", My.Resources.rien, "adv", 3)
+    Public r3 As New Jeux("Tétris", My.Resources.rien, "adv", 8)
 
-    Dim tabJeu() As Jeux = {pac, pong, tetris}
-
-    '------CréationPanelJeu------
-    'creer le panel l'ajouter a la classe jeu puis 
-    'panelGlobal?control.add(jeu._panJeu)  exemple d'ajout 
+    Dim tabJeu() As Jeux = {pac, pong, tetris, r1, r2, r3}
 
 
     Private Sub shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -65,23 +64,46 @@
     Private Sub creationTabGameShop()
 
         For Each i In tabJeu
-        
-            Dim img As New PictureBox
-            img.Width = 150
-            img.Width = 180
-            img.Image = i._jacket
 
-            Dim pnlGame As New Panel
-            pnlGame.Width = 150
-            pnlGame.Height = 180
-            pnlGame.AutoSize = False
+            Console.WriteLine("titi")
+            Dim pnlJeu As New Panel
+            pnlJeu.Width = 150
+            pnlJeu.Height = 180
+            pnlJeu.AutoSize = False
+            pnlJeu.BackgroundImage = i._jacket
+            AddHandler pnlJeu.Click, AddressOf descriptionJeu
 
-            pnlGame.Controls.Add(img)
-
-            i._panJeu = pnlGame
-
-            pnlGame.Controls.Add(pnlGame)
+            i._panJeu = pnlJeu
+            pnlGame.Controls.Add(pnlJeu)
         Next
     End Sub
 
+    Private Sub descriptionJeu(sender As Object, e As EventArgs)
+
+        Dim pnlDescriJeu As New FlowLayoutPanel
+        pnlDescriJeu.AutoSize = True
+        pnlDescriJeu.Height = 150
+        pnlDescriJeu.Width = 150
+        pnlDescriJeu.Anchor = AnchorStyles.Left & AnchorStyles.Bottom & AnchorStyles.Right & AnchorStyles.Top
+        pnlDescriJeu.FlowDirection = FlowDirection.TopDown
+
+        Dim lblTitreJeu As New Label
+        Dim lblTypeJeu As New Label
+        Dim lblNoteJeu As New Label
+
+        pnlDescriJeu.BackColor = Color.Green
+
+        Console.WriteLine("ttoto")
+
+        lblTitreJeu.Text = "Titre : " & sender._nomJ
+        lblTypeJeu.Text = "Type : " & sender.type
+        lblNoteJeu.Text = "Note : " & sender._note
+
+
+        pnlDescriJeu.Controls.Add(lblTitreJeu)
+        pnlDescriJeu.Controls.Add(lblTypeJeu)
+        pnlDescriJeu.Controls.Add(lblNoteJeu)
+
+        pnlGameDescri.Controls.Add(pnlDescriJeu)
+    End Sub
 End Class

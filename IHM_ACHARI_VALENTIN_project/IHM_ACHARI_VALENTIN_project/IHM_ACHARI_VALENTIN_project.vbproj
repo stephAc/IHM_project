@@ -173,5 +173,8 @@
   <ItemGroup>
     <None Include="Resources\rien.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rien.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

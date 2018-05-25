@@ -30,13 +30,13 @@ Partial Class shop
         Me.btnExit = New System.Windows.Forms.Button()
         Me.TabLayGameDescription = New System.Windows.Forms.TableLayoutPanel()
         Me.LabDescri = New System.Windows.Forms.Label()
-        Me.ListBoxDescription = New System.Windows.Forms.ListBox()
         Me.pnlGame = New System.Windows.Forms.FlowLayoutPanel()
         Me.panRecherhe = New System.Windows.Forms.Panel()
         Me.btnRecherche = New System.Windows.Forms.Button()
         Me.cboBoxTrier = New System.Windows.Forms.ComboBox()
         Me.lblTrier = New System.Windows.Forms.Label()
         Me.txtRecherche = New System.Windows.Forms.TextBox()
+        Me.pnlGameDescri = New System.Windows.Forms.Panel()
         Me.pnlNav.SuspendLayout()
         Me.TabLayGameDescription.SuspendLayout()
         Me.panRecherhe.SuspendLayout()
@@ -120,7 +120,7 @@ Partial Class shop
         Me.TabLayGameDescription.ColumnCount = 1
         Me.TabLayGameDescription.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TabLayGameDescription.Controls.Add(Me.LabDescri, 0, 0)
-        Me.TabLayGameDescription.Controls.Add(Me.ListBoxDescription, 0, 1)
+        Me.TabLayGameDescription.Controls.Add(Me.pnlGameDescri, 0, 1)
         Me.TabLayGameDescription.Location = New System.Drawing.Point(28, 83)
         Me.TabLayGameDescription.Name = "TabLayGameDescription"
         Me.TabLayGameDescription.RowCount = 2
@@ -144,14 +144,6 @@ Partial Class shop
         Me.LabDescri.Text = "Game Description"
         Me.LabDescri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LabDescri.UseCompatibleTextRendering = True
-        '
-        'ListBoxDescription
-        '
-        Me.ListBoxDescription.FormattingEnabled = True
-        Me.ListBoxDescription.Location = New System.Drawing.Point(3, 96)
-        Me.ListBoxDescription.Name = "ListBoxDescription"
-        Me.ListBoxDescription.Size = New System.Drawing.Size(247, 524)
-        Me.ListBoxDescription.TabIndex = 1
         '
         'pnlGame
         '
@@ -208,6 +200,14 @@ Partial Class shop
         Me.txtRecherche.Size = New System.Drawing.Size(400, 20)
         Me.txtRecherche.TabIndex = 0
         '
+        'pnlGameDescri
+        '
+        Me.pnlGameDescri.BackColor = System.Drawing.SystemColors.Info
+        Me.pnlGameDescri.Location = New System.Drawing.Point(3, 96)
+        Me.pnlGameDescri.Name = "pnlGameDescri"
+        Me.pnlGameDescri.Size = New System.Drawing.Size(247, 527)
+        Me.pnlGameDescri.TabIndex = 1
+        '
         'shop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -238,11 +238,11 @@ Partial Class shop
     Friend WithEvents btnExit As Button
     Friend WithEvents TabLayGameDescription As TableLayoutPanel
     Friend WithEvents LabDescri As Label
-    Friend WithEvents ListBoxDescription As ListBox
     Friend WithEvents pnlGame As FlowLayoutPanel
     Friend WithEvents panRecherhe As Panel
     Friend WithEvents txtRecherche As TextBox
     Friend WithEvents lblTrier As Label
     Friend WithEvents cboBoxTrier As ComboBox
     Friend WithEvents btnRecherche As Button
+    Friend WithEvents pnlGameDescri As Panel
 End Class
